@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfApp.CustomBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="CustomBox" Height="150" Width="275" PreviewKeyDown="Window_PreviewKeyDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label 
+        Content="Are you sure you want to close the application?" 
+        HorizontalAlignment="Center" 
+        VerticalAlignment="Center" 
+        Grid.Row="0" 
+        Margin="10" />
+
+        <StackPanel 
+        Orientation="Horizontal" 
+        HorizontalAlignment="Center" 
+        Grid.Row="1" 
+        Margin="10">
+
+            <Button 
+            x:Name="btnYes" 
+            Width="70" 
+            Height="30" 
+            Content="Yes" 
+            Margin="5" 
+            Click="btnYes_Click" />
+
+            <Button 
+            x:Name="btnNo" 
+            Width="70" 
+            Height="30" 
+            Content="No" 
+            Margin="5" 
+            Click="btnNo_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,53 @@
+﻿<Window x:Class="WpfApp.TeamInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="Team Info" Height="270" Width="250" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="Country:" />
+        <Label Grid.Row="0" Grid.Column="1" x:Name="ValueLabel1" />
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Fifa code:" />
+        <Label Grid.Row="1" Grid.Column="1" x:Name="ValueLabel2" />
+
+        <Label Grid.Row="2" Grid.Column="0" Content="Games played:" />
+        <Label Grid.Row="2" Grid.Column="1" x:Name="ValueLabel3" />
+
+        <Label Grid.Row="3" Grid.Column="0" Content="Games won:" />
+        <Label Grid.Row="3" Grid.Column="1" x:Name="ValueLabel4" />
+
+        <Label Grid.Row="4" Grid.Column="0" Content="Games lost:" />
+        <Label Grid.Row="4" Grid.Column="1" x:Name="ValueLabel5" />
+
+        <Label Grid.Row="5" Grid.Column="0" Content="Games draw:" />
+        <Label Grid.Row="5" Grid.Column="1" x:Name="ValueLabel6" />
+
+        <Label Grid.Row="6" Grid.Column="0" Content="Goals for:" />
+        <Label Grid.Row="6" Grid.Column="1" x:Name="ValueLabel7" />
+
+        <Label Grid.Row="7" Grid.Column="0" Content="Goals against:" />
+        <Label Grid.Row="7" Grid.Column="1" x:Name="ValueLabel8" />
+
+        <Label Grid.Row="8" Grid.Column="0" Content="Goal differential:" />
+        <Label Grid.Row="8" Grid.Column="1" x:Name="ValueLabel9" />
+    </Grid>
+</Window>
